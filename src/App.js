@@ -19,7 +19,7 @@ function App() {
     // затем берем оттуда данные из JSON файла
     // затем преобразуем их в json
     // и передаем в функцию изменения состояния setUsers сами данные
-    fetch("https://reqres.in/api/users")
+    fetch("https://reqres.in/api/users?page=2")
       .then((res) => res.json())
       .then((json) => {
         setUsers(json.data);
